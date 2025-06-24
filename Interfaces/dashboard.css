@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f7f9fb;
+    color: #222;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background: #f7f9fb;
+    border-right: 1px solid #e5eaf1;
+    padding: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    letter-spacing: -1px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .sidebar nav li {
+    display: flex;
+    align-items: center;
+    padding: 10px 32px;
+    font-size: 16px;
+    color: #222;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: background 0.15s;
+    gap: 12px;
+  }
+  
+  .sidebar nav li.active,
+  .sidebar nav li:hover {
+    background: #e9eef3;
+    font-weight: 600;
+  }
+  
+  .sidebar .icon {
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 48px 48px 0 48px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -2px;
+  }
+  
+  .create-btn {
+    background: #e9eef3;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    color: #222;
+    transition: background 0.15s;
+  }
+  
+  .create-btn:hover {
+    background: #dbe3ea;
+  }
+  
+  .filter-row {
+    margin: 32px 0 0 0;
+  }
+  
+  .filter-btn {
+    background: #e9eef3;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    color: #222;
+    transition: background 0.15s;
+  }
+  
+  .filter-btn:hover {
+    background: #dbe3ea;
+  }
+  
+  .competitions-section {
+    margin-top: 32px;
+  }
+  
+  .competitions-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  
+  .competitions-list {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+  }
+  
+  .competition-info {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    min-width: 320px;
+  }
+  
+  .competition-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .status {
+    font-size: 16px;
+    color: #3b82f6;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+  
+  .status.completed {
+    color: #64748b;
+  }
+  
+  .status.upcoming {
+    color: #6366f1;
+  }
+  
+  .competition-block .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  
+  .competition-block .meta {
+    font-size: 15px;
+    color: #64748b;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .competition-images {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: flex-start;
+  }
+  
+  .competition-images img {
+    width: 320px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(30, 41, 59, 0.04);
+    background: #e9eef3;
+  }
+  
+  @media (max-width: 1100px) {
+    .main-content {
+      padding: 32px 8px 0 8px;
+    }
+    .competitions-list {
+      flex-direction: column;
+      gap: 32px;
+    }
+    .competition-images img {
+      width: 100%;
+      max-width: 320px;
+    }
+  }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SportBoard Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">SportBoard</div>
+      <nav>
+        <ul>
+          <li class="active">
+            <span class="icon">
+              <!-- Home SVG -->
+              <svg width="20" height="20" fill="none"><path d="M3 8.5L10 3l7 5.5V16a1 1 0 0 1-1 1h-3.5a.5.5 0 0 1-.5-.5V13a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v3.5a.5.5 0 0 1-.5.5H4a1 1 0 0 1-1-1V8.5z" stroke="#222" stroke-width="1.5"/></svg>
+            </span>
+            Home
+          </li>
+          <li>
+            <span class="icon">
+              <!-- Trophy SVG -->
+              <svg width="20" height="20" fill="none"><path d="M5 4h10v2a5 5 0 0 1-10 0V4zm0 0V2m10 2V2M2 6h3m13 0h-3M10 11v4m-3 3h6" stroke="#222" stroke-width="1.5"/></svg>
+            </span>
+            Competitions
+          </li>
+          <li>
+            <span class="icon">
+              <!-- Users SVG -->
+              <svg width="20" height="20" fill="none"><path d="M10 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 7v-1a4 4 0 0 0-8 0v1" stroke="#222" stroke-width="1.5"/><path d="M17 17v-1a6 6 0 0 0-12 0v1" stroke="#222" stroke-width="1.5"/></svg>
+            </span>
+            Teams
+          </li>
+          <li>
+            <span class="icon">
+              <!-- User SVG -->
+              <svg width="20" height="20" fill="none"><circle cx="10" cy="7" r="3" stroke="#222" stroke-width="1.5"/><path d="M17 17v-1a6 6 0 0 0-12 0v1" stroke="#222" stroke-width="1.5"/></svg>
+            </span>
+            Players
+          </li>
+          <li>
+            <span class="icon">
+              <!-- Settings SVG -->
+              <svg width="20" height="20" fill="none"><circle cx="10" cy="10" r="3" stroke="#222" stroke-width="1.5"/><path d="M10 2v2M10 16v2M4.22 4.22l1.42 1.42M14.36 14.36l1.42 1.42M2 10h2M16 10h2M4.22 15.78l1.42-1.42M14.36 5.64l1.42-1.42" stroke="#222" stroke-width="1.5"/></svg>
+            </span>
+            Settings
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <h1>Dashboard</h1>
+        <button class="create-btn">Create New Competition</button>
+      </header>
+      <div class="filter-row">
+        <button class="filter-btn">Filter</button>
+      </div>
+      <section class="competitions-section">
+        <h2>Competitions</h2>
+        <div class="competitions-list">
+          <div class="competition-info">
+            <div class="competition-block">
+              <span class="status active">Active</span>
+              <div class="title">Basketball Tournament</div>
+              <div class="meta">
+                <span>12 teams</span>
+                <span>|</span>
+                <span>32 players</span>
+              </div>
+            </div>
+            <div class="competition-block">
+              <span class="status completed">Completed</span>
+              <div class="title">Soccer League</div>
+              <div class="meta">
+                <span>16 teams</span>
+                <span>|</span>
+                <span>40 players</span>
+              </div>
+            </div>
+            <div class="competition-block">
+              <span class="status upcoming">Upcoming</span>
+              <div class="title">Tennis Championship</div>
+              <div class="meta">
+                <span>8 teams</span>
+                <span>|</span>
+                <span>16 players</span>
+              </div>
+            </div>
+          </div>
+          <div class="competition-images">
+            <img src="img/basketball.jpg" alt="Basketball Court">
+            <img src="img/soccer.jpg" alt="Soccer Field">
+            <img src="img/tennis.jpg" alt="Tennis Court">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

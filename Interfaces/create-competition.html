@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Competition</title>
+  <link rel="stylesheet" href="create-competition.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo">SportBoard</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Competitions</a>
+      <a href="#">Participants</a>
+      <a href="#">Schedule</a>
+      <a href="#">Results</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="notif-btn">
+        <!-- Bell SVG -->
+        <svg width="22" height="22" fill="none"><path d="M11 19a2 2 0 0 0 2-2H9a2 2 0 0 0 2 2zm6-5V9a6 6 0 1 0-12 0v5a2 2 0 0 1-2 2h16a2 2 0 0 1-2-2z" stroke="#222" stroke-width="1.5"/></svg>
+      </button>
+      <div class="avatar">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+      </div>
+    </div>
+  </div>
+  <main class="main-content">
+    <h1>Create Competition</h1>
+    <form class="competition-form">
+      <label>
+        Competition Name
+        <input type="text" placeholder="Enter competition name" name="competitionname">
+      </label>
+      <label>
+        Sport
+        <input type="text" placeholder="Enter sport" name="sport">
+      </label>
+      <label>
+        Category
+        <input type="text" placeholder="Enter category" name="category">
+      </label>
+      <div class="row">
+        <label>
+          Start Date
+          <input type="date" name="startdate" placeholder="Select start date">
+        </label>
+        <label>
+          End Date
+          <input type="date" name="enddate" placeholder="Select end date">
+        </label>
+      </div>
+      <label>
+        Location
+        <input type="text" placeholder="Enter location" name="location">
+      </label>
+      <label>
+        Number of Participants/Teams
+        <input type="number" placeholder="Enter number" name="number">
+      </label>
+      <label>
+        Description
+        <textarea placeholder="Enter description" name="description"></textarea>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="save-btn">Save</button>
+        <button type="button" class="cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

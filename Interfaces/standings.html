@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>League Standings</title>
+  <link rel="stylesheet" href="standings.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo">SportBoard</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Competitions</a>
+      <a href="#">Teams</a>
+      <a href="#">Players</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="notif-btn">
+        <!-- Bell SVG -->
+        <svg width="22" height="22" fill="none"><path d="M11 19a2 2 0 0 0 2-2H9a2 2 0 0 0 2 2zm6-5V9a6 6 0 1 0-12 0v5a2 2 0 0 1-2 2h16a2 2 0 0 1-2-2z" stroke="#222" stroke-width="1.5"/></svg>
+      </button>
+      <div class="avatar">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+      </div>
+    </div>
+  </div>
+  <main class="main-content">
+    <h1>League Standings</h1>
+    <div class="updated-date">Updated: Oct 28, 2024</div>
+    <div class="table-container">
+      <table class="standings-table">
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>Points</th>
+            <th>Played</th>
+            <th>Won</th>
+            <th>Drawn</th>
+            <th>Lost</th>
+            <th>Goals For</th>
+            <th>Goals Against</th>
+            <th>Goal Difference</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>United FC</td><td>23</td><td>10</td><td>7</td><td>2</td><td>1</td><td>20</td><td>9</td><td>11</td>
+          </tr>
+          <tr>
+            <td>City Rovers</td><td>22</td><td>10</td><td>7</td><td>1</td><td>2</td><td>18</td><td>10</td><td>8</td>
+          </tr>
+          <tr>
+            <td>Athletic Club</td><td>20</td><td>10</td><td>6</td><td>2</td><td>2</td><td>17</td><td>11</td><td>6</td>
+          </tr>
+          <tr>
+            <td>Wanderers</td><td>19</td><td>10</td><td>6</td><td>1</td><td>3</td><td>16</td><td>12</td><td>4</td>
+          </tr>
+          <tr>
+            <td>Strikers</td><td>18</td><td>10</td><td>5</td><td>3</td><td>2</td><td>15</td><td>10</td><td>5</td>
+          </tr>
+          <tr>
+            <td>Dynamos</td><td>12</td><td>10</td><td>3</td><td>3</td><td>4</td><td>8</td><td>12</td><td>-4</td>
+          </tr>
+          <tr>
+            <td>Tigers</td><td>10</td><td>10</td><td>2</td><td>4</td><td>4</td><td>7</td><td>11</td><td>-4</td>
+          </tr>
+          <tr>
+            <td>Lions</td><td>9</td><td>10</td><td>2</td><td>3</td><td>5</td><td>6</td><td>12</td><td>-6</td>
+          </tr>
+          <tr>
+            <td>Panthers</td><td>6</td><td>10</td><td>1</td><td>3</td><td>6</td><td>5</td><td>16</td><td>-11</td>
+          </tr>
+          <tr>
+            <td>Falcons</td><td>2</td><td>10</td><td>0</td><td>2</td><td>8</td><td>4</td><td>18</td><td>-14</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="recent-results">
+      <h2>Recent Results</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Home Team</th>
+              <th>Away Team</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">Oct 25, 2024</a></td>
+              <td>United FC</td>
+              <td>City Rovers</td>
+              <td>2-1</td>
+            </tr>
+            <tr>
+              <td><a href="#">Oct 24, 2024</a></td>
+              <td>Athletic Club</td>
+              <td>Wanderers</td>
+              <td>1-1</td>
+            </tr>
+            <tr>
+              <td><a href="#">Oct 23, 2024</a></td>
+              <td>Strikers</td>
+              <td>Dynamos</td>
+              <td>0-2</td>
+            </tr>
+            <tr>
+              <td><a href="#">Oct 22, 2024</a></td>
+              <td>Tigers</td>
+              <td>Lions</td>
+              <td>1-0</td>
+            </tr>
+            <tr>
+              <td><a href="#">Oct 21, 2024</a></td>
+              <td>Panthers</td>
+              <td>Falcons</td>
+              <td>0-3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="performance-graph">
+      <h2>Team Performance Graph</h2>
+      <div class="graph-card">
+        <div class="graph-header">
+          <div>
+            <div class="team-label">United FC Performance</div>
+            <div class="points-label"><span class="points">25 points</span></div>
+            <div class="trend-label">Last 10 Matches <span class="trend">+15%</span></div>
+          </div>
+        </div>
+        <div class="graph">
+          <!-- Simple SVG line graph as placeholder -->
+          <svg width="100%" height="80" viewBox="0 0 400 80">
+            <polyline
+              fill="none"
+              stroke="#3b82f6"
+              stroke-width="3"
+              points="0,60 40,30 80,50 120,40 160,60 200,20 240,70 280,30 320,60 360,40 400,60"
+            />
+          </svg>
+          <div class="graph-labels">
+            <span>Match 1</span>
+            <span>Match 2</span>
+            <span>Match 3</span>
+            <span>Match 4</span>
+            <span>Match 5</span>
+            <span>Match 6</span>
+            <span>Match 7</span>
+          </div>
+        </div>
+        <button class="export-btn">Export Standings</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

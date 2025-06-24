@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Participants</title>
+  <link rel="stylesheet" href="participants.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo">SportBoard</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Competitions</a>
+      <a href="#">Participants</a>
+      <a href="#">Schedule</a>
+      <a href="#">Results</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="notif-btn">
+        <!-- Bell SVG -->
+        <svg width="22" height="22" fill="none"><path d="M11 19a2 2 0 0 0 2-2H9a2 2 0 0 0 2 2zm6-5V9a6 6 0 1 0-12 0v5a2 2 0 0 1-2 2h16a2 2 0 0 1-2-2z" stroke="#222" stroke-width="1.5"/></svg>
+      </button>
+      <div class="avatar">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+      </div>
+    </div>
+  </div>
+  <main class="main-content">
+    <div class="header-row">
+      <h1>Participants</h1>
+      <button class="add-btn">Add Participant</button>
+    </div>
+    <div class="filters-row">
+      <button class="filter-btn">Category <span class="arrow">&#9662;</span></button>
+      <button class="filter-btn">Status <span class="arrow">&#9662;</span></button>
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th class="actions-header">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Team A</td>
+            <td><a href="#" class="category-link">Soccer</a></td>
+            <td><span class="status-badge active">Active</span></td>
+            <td class="actions">
+              <a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Team B</td>
+            <td><a href="#" class="category-link">Basketball</a></td>
+            <td><span class="status-badge inactive">Inactive</span></td>
+            <td class="actions">
+              <a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Team C</td>
+            <td><a href="#" class="category-link">Volleyball</a></td>
+            <td><span class="status-badge active">Active</span></td>
+            <td class="actions">
+              <a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Team D</td>
+            <td><a href="#" class="category-link">Tennis</a></td>
+            <td><span class="status-badge active">Active</span></td>
+            <td class="actions">
+              <a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Team E</td>
+            <td><a href="#" class="category-link">Swimming</a></td>
+            <td><span class="status-badge inactive">Inactive</span></td>
+            <td class="actions">
+              <a href="#" class="action-link">Edit</a> | <a href="#" class="action-link">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

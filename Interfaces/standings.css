@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f7f9fb;
+    color: #222;
+  }
+  
+  .topbar {
+    width: 100%;
+    height: 56px;
+    background: #f7f9fb;
+    border-bottom: 1px solid #e5eaf1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 36px;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+  
+  .topbar nav {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .topbar nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.15s;
+  }
+  
+  .topbar nav a:hover {
+    color: #3b82f6;
+  }
+  
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .notif-btn {
+    background: #e9eef3;
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.15s;
+    padding: 0;
+  }
+  
+  .notif-btn:hover {
+    background: #dbe3ea;
+  }
+  
+  .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #e9eef3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .main-content {
+    max-width: 900px;
+    margin: 48px auto 0 auto;
+    padding: 0 24px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .updated-date {
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  
+  .table-container {
+    background: #f7f9fb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: none;
+    border: 1.5px solid #e5eaf1;
+    margin-bottom: 32px;
+  }
+  
+  .standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f7f9fb;
+  }
+  
+  .standings-table th, .standings-table td {
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  .standings-table th {
+    color: #64748b;
+    font-weight: 600;
+    background: #f7f9fb;
+    border-bottom: 1.5px solid #e5eaf1;
+  }
+  
+  .standings-table tr:not(:last-child) td {
+    border-bottom: 1px solid #e5eaf1;
+  }
+  
+  .recent-results {
+    margin-bottom: 32px;
+  }
+  
+  .recent-results h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .recent-results table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f7f9fb;
+  }
+  
+  .recent-results th, .recent-results td {
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  .recent-results th {
+    color: #64748b;
+    font-weight: 600;
+    background: #f7f9fb;
+    border-bottom: 1.5px solid #e5eaf1;
+  }
+  
+  .recent-results tr:not(:last-child) td {
+    border-bottom: 1px solid #e5eaf1;
+  }
+  
+  .recent-results a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s;
+  }
+  
+  .recent-results a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+  }
+  
+  .performance-graph h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .graph-card {
+    background: #f7f9fb;
+    border-radius: 10px;
+    border: 1.5px solid #e5eaf1;
+    padding: 18px 24px 18px 24px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .graph-header {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .team-label {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 2px;
+  }
+  
+  .points-label {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  .trend-label {
+    font-size: 15px;
+    color: #64748b;
+  }
+  
+  .trend {
+    color: #22c55e;
+    font-weight: 600;
+  }
+  
+  .graph {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  .graph-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 2px;
+  }
+  
+  .export-btn {
+    background: #e9eef3;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+    align-self: flex-end;
+  }
+  
+  .export-btn:hover {
+    background: #dbe3ea;
+  }
+  
+  @media (max-width: 1000px) {
+    .main-content {
+      max-width: 100%;
+      margin: 32px 0 0 0;
+      padding: 0 8px;
+    }
+    .graph-card {
+      padding: 12px 6px;
+    }
+  }

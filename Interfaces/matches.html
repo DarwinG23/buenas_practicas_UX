@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Matches</title>
+  <link rel="stylesheet" href="matches.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo">SportBoard</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Competitions</a>
+      <a href="#">Matches</a>
+      <a href="#">Teams</a>
+      <a href="#">Players</a>
+      <a href="#">Venues</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="notif-btn">
+        <!-- Bell SVG -->
+        <svg width="22" height="22" fill="none"><path d="M11 19a2 2 0 0 0 2-2H9a2 2 0 0 0 2 2zm6-5V9a6 6 0 1 0-12 0v5a2 2 0 0 1-2 2h16a2 2 0 0 1-2-2z" stroke="#222" stroke-width="1.5"/></svg>
+      </button>
+      <div class="avatar">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+      </div>
+    </div>
+  </div>
+  <main class="main-content">
+    <div class="header-row">
+      <h1>Matches</h1>
+      <button class="add-btn">Add Match</button>
+    </div>
+    <div class="tabs">
+      <a href="#" class="tab active">Calendar</a>
+      <a href="#" class="tab">List</a>
+    </div>
+    <div class="calendar-section">
+      <div class="calendar-header">
+        <button class="arrow-btn">&#60;</button>
+        <div class="month-label">July 2024</div>
+        <button class="arrow-btn">&#62;</button>
+        <div class="month-label">August 2024</div>
+      </div>
+      <div class="calendar-grid">
+        <div class="calendar-month">
+          <div class="calendar-days">
+            <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+          </div>
+          <div class="calendar-dates">
+            <span></span><span>1</span><span>2</span><span>3</span><span>4</span><span><span class="selected">5</span></span><span>6</span>
+            <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span>
+            <span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+            <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span>
+            <span>28</span><span>29</span><span>30</span>
+          </div>
+        </div>
+        <div class="calendar-month">
+          <div class="calendar-days">
+            <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+          </div>
+          <div class="calendar-dates">
+            <span></span><span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span>
+            <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+            <span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>
+            <span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+            <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="upcoming-section">
+      <h2>Upcoming Matches</h2>
+      <div class="match-list">
+        <div class="match-item">
+          <div class="match-icon">
+            <!-- Soccer SVG -->
+            <svg width="28" height="28" fill="none"><circle cx="14" cy="14" r="13" stroke="#bfc9d9" stroke-width="2"/><circle cx="14" cy="14" r="5" stroke="#64748b" stroke-width="1.5"/></svg>
+          </div>
+          <div class="match-info">
+            <div class="match-title">Soccer Match: Titans vs. Eagles</div>
+            <div class="match-location">Main Arena</div>
+            <div class="match-time">10:00 AM - 12:00 PM</div>
+          </div>
+          <a href="#" class="edit-link">Edit</a>
+        </div>
+        <div class="match-item">
+          <div class="match-icon">
+            <!-- Basketball SVG -->
+            <svg width="28" height="28" fill="none"><circle cx="14" cy="14" r="13" stroke="#bfc9d9" stroke-width="2"/><path d="M14 1v26M1 14h26M5.5 5.5l17 17M22.5 5.5l-17 17" stroke="#64748b" stroke-width="1.5"/></svg>
+          </div>
+          <div class="match-info">
+            <div class="match-title">Basketball Game: Wildcats vs. Panthers</div>
+            <div class="match-location">Court 1</div>
+            <div class="match-time">2:00 PM - 4:00 PM</div>
+          </div>
+          <a href="#" class="edit-link">Edit</a>
+        </div>
+        <div class="match-item">
+          <div class="match-icon">
+            <!-- Baseball SVG -->
+            <svg width="28" height="28" fill="none"><circle cx="14" cy="14" r="13" stroke="#bfc9d9" stroke-width="2"/><path d="M7 7c4 4 10 10 14 14M21 7c-4 4-10 10-14 14" stroke="#64748b" stroke-width="1.5"/></svg>
+          </div>
+          <div class="match-info">
+            <div class="match-title">Baseball Game: Sharks vs. Dolphins</div>
+            <div class="match-location">Field 2</div>
+            <div class="match-time">6:00 PM - 8:00 PM</div>
+          </div>
+          <a href="#" class="edit-link">Edit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

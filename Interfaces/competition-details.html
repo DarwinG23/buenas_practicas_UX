@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Competition Details</title>
+  <link rel="stylesheet" href="competition-details.css">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo">SportBoard</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Competitions</a>
+      <a href="#">Teams</a>
+      <a href="#">Players</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="notif-btn">
+        <!-- Bell SVG -->
+        <svg width="22" height="22" fill="none"><path d="M11 19a2 2 0 0 0 2-2H9a2 2 0 0 0 2 2zm6-5V9a6 6 0 1 0-12 0v5a2 2 0 0 1-2 2h16a2 2 0 0 1-2-2z" stroke="#222" stroke-width="1.5"/></svg>
+      </button>
+      <div class="avatar">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+      </div>
+    </div>
+  </div>
+  <main class="main-content">
+    <h1>National Basketball Championship</h1>
+    <div class="status-row">
+      Status: <span class="status in-progress">In Progress</span>
+      <span class="dot">•</span>
+      Registration Ends: <span class="date">July 15, 2024</span>
+      <span class="dot">•</span>
+      Competition Starts: <span class="date">August 1, 2024</span>
+    </div>
+    <div class="tabs">
+      <a href="#" class="tab active">General Info</a>
+      <a href="#" class="tab">Participants</a>
+      <a href="#" class="tab">Match Schedule</a>
+      <a href="#" class="tab">Rules</a>
+    </div>
+    <section class="overview-section">
+      <h2>Competition Overview</h2>
+      <div class="overview-cards">
+        <div class="overview-card">
+          <div class="label">Teams</div>
+          <div class="value">16</div>
+        </div>
+        <div class="overview-card">
+          <div class="label">Matches</div>
+          <div class="value">64</div>
+        </div>
+        <div class="overview-card">
+          <div class="label">Players</div>
+          <div class="value">192</div>
+        </div>
+        <div class="overview-card">
+          <div class="label">Referees</div>
+          <div class="value">12</div>
+        </div>
+      </div>
+      <div class="overview-actions">
+        <button class="edit-btn">Edit Competition</button>
+        <button class="delete-btn">Delete Competition</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
