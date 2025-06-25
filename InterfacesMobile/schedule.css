@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 24px 0 8px 0;
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-add {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #222;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.switch-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin: 18px 0 0 0;
+  background: #f3f5f8;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.switch-tab {
+  flex: 1;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: #8a97a8;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.switch-tab.active {
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(25, 118, 248, 0.04);
+}
+
+.calendar-section {
+  margin: 18px 0 0 0;
+  padding: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.calendar-nav {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #8a97a8;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.calendar-month {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.calendar-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.calendar-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 4px;
+  text-align: center;
+  font-size: 15px;
+  color: #222;
+}
+
+.calendar-days {
+  color: #8a97a8;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.calendar-row span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.calendar-row span.selected, .calendar-row span.active, .calendar-day-active {
+  background: #1976f8;
+  color: #fff;
+  font-weight: 600;
+}
+
+.matches-list {
+  padding: 18px 0 80px 0;
+  width: 90%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.matches-date {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.match {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.match-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.match-details {
+  font-size: 13px;
+  color: #8a97a8;
+}
+
+.match-status {
+  font-size: 14px;
+  color: #8a97a8;
+  font-weight: 500;
+  margin-left: 12px;
+  margin-top: 2px;
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-top: 1.5px solid #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  z-index: 20;
+  height: 64px;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0 0 0;
+  color: #8a97a8;
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.nav-item.active, .nav-item:active {
+  color: #1976f8;
+}
+
+.nav-icon {
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 100vw;
+  }
+  .bottom-nav {
+    max-width: 100vw;
+  }
+} 

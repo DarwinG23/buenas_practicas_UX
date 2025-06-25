@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Competition</title>
+  <link rel="stylesheet" href="create-competition.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <button class="header-back">&#10005;</button>
+      <span class="header-title">Create Competition</span>
+    </header>
+
+    <!-- Form -->
+    <form class="competition-form">
+      <input type="text" class="input" placeholder="Competition Name" />
+      <div class="select-wrapper">
+        <select class="input select">
+          <option>Sport</option>
+          <option>Soccer</option>
+          <option>Basketball</option>
+          <option>Tennis</option>
+        </select>
+      </div>
+      <div class="select-wrapper">
+        <select class="input select">
+          <option>Category</option>
+          <option>Men</option>
+          <option>Women</option>
+          <option>Mixed</option>
+        </select>
+      </div>
+      <input type="text" class="input" placeholder="Dates" />
+      <input type="text" class="input" placeholder="Location" />
+      <input type="text" class="input" placeholder="Number of Teams/Participants" />
+      <textarea class="input textarea" placeholder="Description"></textarea>
+    </form>
+
+    <!-- Buttons -->
+    <div class="form-actions">
+      <button class="btn cancel">Cancel</button>
+      <button class="btn save">Save</button>
+    </div>
+  </div>
+</body>
+</html> 

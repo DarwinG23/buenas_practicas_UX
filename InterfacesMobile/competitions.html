@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competitions</title>
+  <link rel="stylesheet" href="competitions.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <span class="header-title">Competitions</span>
+      <button class="header-add">+</button>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+      <button class="tab active">Active</button>
+      <button class="tab">Completed</button>
+      <button class="tab">Upcoming</button>
+    </nav>
+
+    <!-- Competitions List -->
+    <main class="competitions-list">
+      <div class="competition-card">
+        <div class="competition-info">
+          <span class="competition-status">Active</span>
+          <span class="competition-title">Soccer Tournament</span>
+          <span class="competition-details">12 Teams | 32 Matches</span>
+        </div>
+        <img class="competition-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=80" alt="Soccer field">
+      </div>
+      <div class="competition-card">
+        <div class="competition-info">
+          <span class="competition-status">Active</span>
+          <span class="competition-title">Basketball League</span>
+          <span class="competition-details">8 Teams | 28 Matches</span>
+        </div>
+        <img class="competition-img" src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=200&q=80" alt="Basketball court">
+      </div>
+      <div class="competition-card">
+        <div class="competition-info">
+          <span class="competition-status">Active</span>
+          <span class="competition-title">Tennis Open</span>
+          <span class="competition-details">64 Players | 63 Matches</span>
+        </div>
+        <img class="competition-img" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=200&q=80" alt="Tennis court">
+      </div>
+    </main>
+
+    <!-- Create Competition Button -->
+    <button class="create-competition">
+      <span class="plus">+</span> Create Competition
+    </button>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="#" class="nav-item active">
+        <span class="nav-icon">🏆</span>
+        <span class="nav-label">Competitions</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">👥</span>
+        <span class="nav-label">Teams</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">Profile</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule</title>
+  <link rel="stylesheet" href="schedule.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <span class="header-title">Schedule</span>
+      <button class="header-add">+</button>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="switch-tabs">
+      <button class="switch-tab active">Calendar</button>
+      <button class="switch-tab">List</button>
+    </nav>
+
+    <!-- Calendar -->
+    <section class="calendar-section">
+      <div class="calendar-header">
+        <button class="calendar-nav">&#60;</button>
+        <span class="calendar-month">October 2024</span>
+        <button class="calendar-nav">&#62;</button>
+      </div>
+      <div class="calendar-grid">
+        <div class="calendar-row calendar-days">
+          <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+        </div>
+        <div class="calendar-row">
+          <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+        </div>
+        <div class="calendar-row">
+          <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+        </div>
+        <div class="calendar-row">
+          <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+        </div>
+        <div class="calendar-row">
+          <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+        </div>
+        <div class="calendar-row">
+          <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span></span><span></span>
+        </div>
+      </div>
+      <div class="calendar-selected-day" style="top: 56px; left: 240px;"></div>
+      <div class="calendar-dot" style="top: 56px; left: 240px;"></div>
+      <div class="calendar-day-active" style="grid-row: 2; grid-column: 6;">5</div>
+    </section>
+
+    <!-- Matches List -->
+    <section class="matches-list">
+      <div class="matches-date">October 15, 2024</div>
+      <div class="match">
+        <div class="match-info">
+          <div class="match-title">Team A vs. Team B</div>
+          <div class="match-details">10:00 AM · Field 1</div>
+        </div>
+        <div class="match-status">Upcoming</div>
+      </div>
+      <div class="match">
+        <div class="match-info">
+          <div class="match-title">Team C vs. Team D</div>
+          <div class="match-details">12:00 PM · Field 2</div>
+        </div>
+        <div class="match-status">Upcoming</div>
+      </div>
+      <div class="match">
+        <div class="match-info">
+          <div class="match-title">Team E vs. Team F</div>
+          <div class="match-details">2:00 PM · Field 1</div>
+        </div>
+        <div class="match-status">Upcoming</div>
+      </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">📅</span>
+        <span class="nav-label">Schedule</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">👥</span>
+        <span class="nav-label">Teams</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="nav-icon">⚙️</span>
+        <span class="nav-label">Settings</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html> 
